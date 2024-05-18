@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="24dp"
+    android:background="@drawable/task_background">
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="221dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/edit_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/edit_icon"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/title_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/delete_icon"
+        android:background="@null"
+        android:layout_margin="24dp"
+        app:layout_constraintStart_toEndOf="@id/edit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/info_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/info_icon"
+        android:background="@null"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
